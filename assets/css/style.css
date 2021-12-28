@@ -1,0 +1,10 @@
+.hidden {
+    display: none;
+}
+
+.reflection {
+    font-style: italic;
+    padding: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
