@@ -27,7 +27,17 @@
                 <div>
                     <h3>Learning outcomes:</h3>
                     <ul>
-                        ...
+                        <li>Identify and apply appropriate software engineering and project management methodologies,
+                            tools and techniques for the development of solutions to real-world problems.</li>
+                        <li>Explore the implications of computer and network architectures for system-level design and
+                            development, as appropriate for risk and quality management.</li>
+                        <li>Design, develop and evaluate management systems to produce solutions that handle constraints
+                            and uncertainty, contextualising BDD concepts and secure coding principles & practices in
+                            SDLC.</li>
+                        <li>Systematically develop and implement the skills required to be effective member of a
+                            development team in a virtual professional environment, adopting real-life perspectives on
+                            roles and team organisation.</li>
+
                     </ul>
                 </div>
             </div>
@@ -36,27 +46,100 @@
             id="forum">
             <div class="content">
                 <h2>Unit 1</h2>
-                <p><a class="button" onclick="toggleSection('reading', '1');">Readings</a></p>
-                <div class="hidden" id="reading1">
-                    <blockquote>
-                        <ul>
-                        
-                        </ul>
-                    </blockquote>
-                </div>
-
                 <p><a class="button" onclick="toggleSection('reflex', '1');">Reflection</a></p>
                 <div class="hidden reflection" id="reflex1">
-                    
+                    <strong>10-03-2022: </strong> The course started and in these first days I got my team assigned. We
+                    met with the team's colleagues and I appreciated the different backgrounds in term of culture and
+                    experience we all have. Curious to see what we will achieve.
                 </div>
 
                 <p><a class="button" onclick="toggleSection('discussion', '1');">Discussion</a></p>
                 <div class="hidden" id="discussion1">
                     <p>My discussion in Unit 1</p>
                     <blockquote>
-                    
+                        <p>Software engineering is a young field if compared with other engineering branches, for this
+                            reason, many methodologies are still evolving and many studies are continuously
+                            challenged.&nbsp;</p>
+                        <p>In recent history, many important software projects didn&apos;t realize as planned and the
+                            researchers are trying to determine mathematical reasons why this happen as in&nbsp;Lehtinen
+                            et al. (2014).</p>
+                        <p>As described, the root cause is not a single one, but it is a complex mix of a multitude of
+                            causes that can span from Tasks, People, Method and Environment.</p>
+                        <p><br></p>
+                        <p>In my opinion, the top 3 causes are:</p>
+                        <p>- Incorrect project requirements: If requirements are incorrect, the project&apos;s aim is
+                            not clear then progress cannot be measured and they can lead to poor quality of the software
+                            implementation if any is produced.</p>
+                        <p><br></p>
+                        <p>- Poor planning: Before implementation given a satisfying set of requirements, a feasibility
+                            study should be done to estimate resources such as time, budget, people that are necessary
+                            to the completion of the project. Often companies try to cut corners minimizing cost
+                            assigning fewer people than necessary or not competent enough, possibly trying to spend less
+                            money on third-party software that could help the development process, cutting the legs to
+                            the project. Or poor planning could be the wrong estimation in time, this can be related as
+                            well to unclear requirements that only when started to be developed rise in complexity in an
+                            unexpected way.</p>
+                        <p>- Poor software testing: In the end, software testing when done properly allows to measure
+                            the progress, monitor the quality, and then react accordingly all along with the duration of
+                            the project. Appropriate software testing can even compensate for poor technical
+                            developers.<br><br>Examples:</p>
+                        <p>London stock exchange&apos;s TAURUS project costed 500 million GBP and in 1993 has been
+                            canceled. Initially, the project was supposed to last 6 months and should have allowed all
+                            parties involved in securities exchange to communicate without the use of paper to speed up
+                            the settlement process. As reported (Drummond, 1998) the project grow into an extremely
+                            complex one with unclear requirements and the main cause was that none of the stakeholders
+                            accepted compromises and as a result, the project management boiled together all their
+                            requirements.<br><br></p>
+                        <p>United States Air Force designed the Expeditionary Combat Support System (ECSS) that should
+                            work as ERP to manage the institution&apos;s resources. With the intent to replace 200
+                            existing legacy systems and cut expenses. The project was ongoing from 2005 until 2012 when
+                            USAF decided to interrupt the development after 1.1B USD spent and completion being still
+                            far away. Between the identified reasons for the failure, there is a lack of leadership and
+                            failure to reorganize the institution to properly adapt to the new system.&nbsp;</p>
+                        <p><br></p>
+                        <p>References:</p>
+                        <p>Lehtinen, T.O.A., M&auml;ntyl&auml;, M.V., Vanhanen, J., Itkonen, J. and Lassenius, C.
+                            (2014). Perceived causes of software project failures &ndash; An analysis of their
+                            relationships.&nbsp;<em>Information and Software Technology</em>, 56(6),
+                            pp.623&ndash;643.<br><br></p>
+                        <p>Drummond, H. (1998). Riding a tiger: some lessons of Taurus, accessible at:
+                            https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.540.9787&amp;rep=rep1&amp;type=pdf#:~:text=On%20Wednesday%2011%20March%201993,bank%2D%20ing%20a%20decade%20earlier.
+                        </p>
+                        <p><br>J. Capers, Social and technical reasons for software project failures, Crosstalk J. Defense Softw. Eng. 6 (2006) 4&ndash;9.
+                        </p>
                     </blockquote>
                 </div>
+
+                <p><a class="button" onclick="toggleSection('minute', '1');">Meeting 1</a></p>
+                <div class="hidden" id="minute1">
+                    <a href="../assets/pdf/sepm_minute_1.pdf">Minute meeting 1</a>
+                </div>
+
+                <p><a class="button" onclick="toggleSection('seminar', '1');">Seminar Preparation</a></p>
+                <div class="hidden" id="seminar1">
+                    <pre><span style='font-size: 14px; font-family: "Lucida Console", Monaco, monospace;'>Scenario: Water amount is sufficient
+Given that an user wants to make a coffee
+When level of water is low
+Then the machine signals the low level of the water through a led
+
+Scenario: Regular maintainance operation is required
+Given that an user wants to make a coffee
+When the machine requires cleaning
+Then the machine block itself and requires the maintainance operation
+
+Scenario: Coffee is missing
+Given that an user wants to make coffee
+When he clicks the button for coffee
+Then the machine signals the absence of coffee
+
+Scenario: Make a coffee
+Given that an user wants to make a coffee
+and he put coffee in the machine
+When he clicks the button for coffee
+Then the machine starts to make coffee</span></pre>
+                    <p><br></p>
+                </div>
+
             </div>
             <div class="image">
                 <img alt="" src="../images/spotlight01.jpg"/>
