@@ -88,14 +88,10 @@ body {
   /* Remove background - canvas will handle it */
 }
 
-/* Container for centering content */
-.container {
-  max-width: var(--container-max-width);
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
-}
+/* ==========================================================================
+   Reset and Utility Classes
+   ========================================================================== */
 
-/* Reset and base styles */
 * {
   box-sizing: border-box;
 }
@@ -256,8 +252,6 @@ textarea {
 .mobile-menu-toggle:hover {
   transform: scale(1.05);
 }
-
-/* Burger button styles removed for rewrite */
 
 /* ==========================================================================
    MAIN CONTENT LAYOUT
@@ -645,56 +639,6 @@ textarea {
 }
 
 /* ==========================================================================
-   SKILLS SECTION
-   ========================================================================== */
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--spacing-xl);
-}
-
-.skill-category {
-  background: var(--bg-overlay);
-  backdrop-filter: blur(10px);
-  padding: var(--spacing-lg);
-  border-radius: var(--border-radius-lg);
-  border: 1px solid var(--border-color);
-}
-
-.skill-category h3 {
-  font-size: var(--font-size-xl);
-  margin: 0 0 var(--spacing-md) 0;
-  color: var(--primary-color);
-}
-
-.skill-category ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skill-category li {
-  padding: var(--spacing-sm) 0;
-  color: var(--text-color);
-  border-bottom: 1px solid var(--border-color);
-  position: relative;
-  padding-left: var(--spacing-md);
-}
-
-.skill-category li:last-child {
-  border-bottom: none;
-}
-
-.skill-category li::before {
-  content: "▶";
-  position: absolute;
-  left: 0;
-  color: var(--primary-color);
-  font-size: 0.75rem;
-}
-
-/* ==========================================================================
    EDUCATION SECTION
    ========================================================================== */
 
@@ -791,21 +735,6 @@ textarea {
 .timeline-item:nth-child(even) {
   flex-direction: row-reverse;
 }
-
-/* .timeline-item::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 16px;
-  height: 16px;
-  background: var(--primary-color);
-  border: 4px solid var(--bg-color);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  box-shadow: 0 0 0 3px var(--primary-color);
-} */
 
 .timeline-date {
   flex: 0 0 auto;
@@ -957,59 +886,8 @@ textarea {
 }
 
 /* ==========================================================================
-   CONTACT
+   SOCIAL LINK
    ========================================================================== */
-
-.contact-section {
-  /* padding: var(--spacing-2xl) 0; */
-}
-
-.contact-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
-}
-
-.contact-list li {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-sm);
-}
-
-.contact-list img {
-  width: 24px;
-  height: 24px;
-  margin-right: var(--spacing-sm);
-  display: inline-block;
-}
-
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
-
-.site-footer {
-  background: var(--bg-overlay);
-  backdrop-filter: blur(10px);
-  padding: var(--spacing-2xl) 0 var(--spacing-lg) 0;
-  border-top: 1px solid var(--border-color);
-  margin-top: var(--spacing-3xl);
-}
-
-.footer-content {
-  max-width: var(--container-max-width);
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
-  text-align: center;
-}
-
-.footer-section h3 {
-  font-size: var(--font-size-xl);
-  margin: 0 0 var(--spacing-md) 0;
-  color: var(--text-color);
-}
 
 .social-links {
   display: flex;
@@ -1051,6 +929,24 @@ textarea {
   }
 }
 
+.social-buttons-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  flex-direction: column;
+  padding: 0 var(--spacing-md);
+}
+
+@media screen and (max-width: 900px) {
+  .social-buttons-section {
+    max-width: 100%;
+    padding: 0 var(--spacing-sm);
+  }
+}
+
 .btn-social {
   display: flex;
   align-items: center;
@@ -1074,22 +970,6 @@ textarea {
 .btn-icon {
   width: 24px;
   height: 24px;
-}
-
-/* ==========================================================================
-   UTILITY CLASSES
-   ========================================================================== */
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
 }
 
 /* ==========================================================================
@@ -1298,24 +1178,6 @@ textarea {
     image-rendering: -webkit-optimize-contrast;
   }
 }
-
-/* Dark mode support (if user prefers dark mode) - DISABLED */
-/*
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-color: #e0e0e0;
-    --text-light: #b0b0b0;
-    --bg-color: #1a1a1a;
-    --bg-light: #2a2a2a;
-    --bg-overlay: rgba(42, 42, 42, 0.9);
-    --border-color: #404040;
-  }
-
-  .tech-tag {
-    background: var(--accent-color);
-  }
-}
-*/
 
 /* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
