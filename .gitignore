@@ -39,9 +39,6 @@ coverage/
 *.zip
 *.tar.gz
 
-# Ignore generated manifest
-site.webmanifest
-
 # Ignore personal settings
 *.sublime-workspace
 *.sublime-project

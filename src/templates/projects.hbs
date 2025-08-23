@@ -1,0 +1,38 @@
+<section class="projects-section">
+  <div class="container">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+      {{#each featuredProjects}}
+        <div class="project-card">
+          <img
+            class="project-image"
+            src="{{image}}"
+            alt="{{title}} screenshot"
+          />
+          <div class="project-content">
+            <h3 class="project-title">{{title}}</h3>
+            <p class="project-description">{{description}}</p>
+            <ul class="project-tech-list">
+              {{#each technologies}}
+                <li class="project-tech">{{this}}</li>
+              {{/each}}
+            </ul>
+            <div class="project-links">
+              {{#if liveUrl}}
+                <a href="{{liveUrl}}" class="btn btn-live" target="_blank">Live
+                  Demo</a>
+              {{/if}}
+              {{#if githubUrl}}
+                <a
+                  href="{{githubUrl}}"
+                  class="btn btn-github"
+                  target="_blank"
+                >GitHub</a>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

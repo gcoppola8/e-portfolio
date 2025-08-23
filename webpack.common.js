@@ -93,13 +93,5 @@ module.exports = {
         isProjects: true,
       }),
     }),
-    new HtmlWebpackPlugin({
-      filename: "contact.html",
-      templateContent: compileTemplate("contact", {
-        pageTitle: "Contact Me",
-        pageDescription: "Get in touch with me for collaboration or inquiries",
-        isContact: true,
-      }),
-    }),
   ],
 };

@@ -10,9 +10,7 @@
     "links": [
       { "name": "Home", "url": "#home" },
       { "name": "About", "url": "#about" },
-      { "name": "Projects", "url": "#projects" },
-      { "name": "Life", "url": "#life" },
-      { "name": "Contacts", "url": "#contacts" }
+      { "name": "Projects", "url": "#projects" }
     ]
   },
   "hero": {
