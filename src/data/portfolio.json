@@ -1,0 +1,128 @@
+{
+  "site": {
+    "title": "Gennaro Coppola Portfolio",
+    "author": "Gennaro Coppola",
+    "description": "Portfolio showcasing engineering, software development, and integration projects.",
+    "email": "coppola612@gmail.com",
+    "currentYear": 2025
+  },
+  "navigation": {
+    "links": [
+      { "name": "Home", "url": "#home" },
+      { "name": "About", "url": "#about" },
+      { "name": "Projects", "url": "#projects" },
+      { "name": "Life", "url": "#life" },
+      { "name": "Contacts", "url": "#contacts" }
+    ]
+  },
+  "hero": {
+    "name": "Gennaro",
+    "title": "Software Engineer & Problem Solver",
+    "bio": "I am a passionate engineer and problem solver. My previous experiences are in software engineering, system integrations, networking, file transfer protocols, and payment industry (ecommerce, transactions, payments). Good knowledge of algorithms and data structures with solid mathematical fundamentals. I enjoy being a team member and mentoring others.",
+    "profileImage": "img/profile-photo.jpg"
+  },
+  "featuredProjects": [
+    {},
+    {
+      "title": "E-Commerce Platform",
+      "description": "A full-stack e-commerce solution with React and Node.js",
+      "image": "img/project1.jpg",
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    },
+    {
+      "title": "Task Management App",
+      "description": "Collaborative project management tool with real-time updates",
+      "image": "img/project2.jpg",
+      "technologies": ["Vue.js", "Express", "Socket.io", "PostgreSQL"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    },
+    {
+      "title": "Weather Dashboard",
+      "description": "Interactive weather application with location-based forecasts",
+      "image": "img/project3.jpg",
+      "technologies": ["JavaScript", "Weather API", "Chart.js", "CSS Grid"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    }
+  ],
+  "skills": {
+    "frontend": [
+      "HTML5 & CSS3",
+      "JavaScript (ES6+)",
+      "React",
+      "Vue.js",
+      "Responsive Design"
+    ],
+    "backend": [
+      "Java",
+      "C#",
+      "Python",
+      "Databases (SQL/NoSQL)",
+      "RESTful APIs"
+    ],
+    "tools": ["GitHub", "Azure DevOps", "Docker", "Agile Methodologies"]
+  },
+  "about": {
+    "yearsOfExperience": 8,
+    "bio": "I was born in Napoli, in the south of Italy, and grew up like any other kid, developing an interest in computers from an early age. Throughout my life, I have always been surrounded by the sea and my family. Between the ages of 10 and 20, I wasn’t the best student, but I eventually learned to speak multiple languages and earned two degrees. 😄",
+    "hobbies": "mentoring, teaching, cycling, food, reading",
+    "location": "Prague, Czechia",
+    "email": "coppola612@gmail.com",
+    "phone": "+359 895148268",
+    "languages": [
+      { "language": "Italian &#x1F1EE;&#x1F1F9;", "level": "Mothertongue" },
+      { "language": "English &#x1F1EC;&#x1F1E7;", "level": "C1" },
+      { "language": "Bulgarian &#x1F1E7;&#x1F1EC;", "level": "B2" },
+      { "language": "Czech &#x1F1E8;&#x1F1E9;", "level": "B1" }
+    ]
+  },
+  "experiences": [
+    {
+      "title": "Software Engineer",
+      "company": "Microsoft",
+      "img": "img/microsoft.jpg",
+      "dateRange": "06/2024 – Present",
+      "description": "Azure DevOps Platform, Enterprise authorization team."
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Nuvei",
+      "img": "img/nuvei.jpg",
+      "dateRange": "07/2020 – 05/2024",
+      "description": "Next-gen platform for online payments. Contributed to new payment flows, improved customer experience and system performance."
+    },
+    {
+      "title": "Software Engineer II/III",
+      "company": "Axway",
+      "img": "img/axway.jpg",
+      "dateRange": "11/2018 – 06/2020",
+      "description": "Maintained and developed Axway MFT (Managed File Transfer). Integrated platform with FTP, AWS S3, AWS SQS, Azure Blob Storage, OAuth2 authentication."
+    },
+    {
+      "title": "Junior Web Developer",
+      "company": "Innovaway",
+      "img": "img/innovaway.jpg",
+      "dateRange": "10/2017 – 10/2018",
+      "description": "Worked on www.contactsdirect.com (Luxottica). Implemented solutions to maximize e-commerce conversion, integrated insurances, shipping (shoprunner.com), authentication (id.me), and restyled UI."
+    }
+  ],
+  "education": [
+    {
+      "degree": "🎓 Master's degree in Computer Science",
+      "institution": "University of Essex",
+      "year": "2023",
+      "picture": "img/essex.jpg",
+      "description": "My Master's studies took place during the COVID years, so all lessons were held online. I successfully completed the program while working full-time and caring for my one-year-old son. It was a significant effort, but one I am proud of. The course brought together a truly international and multicultural group of colleagues, and I appreciated the strong academic foundation of the curriculum."
+    },
+    {
+      "degree": "🎓 Bachelor's degree in Computer Science",
+      "institution": "Università di Napoli 'Federico II'",
+      "year": "2018",
+      "picture": "img/federicoii.jpg",
+      "description": "During my studies in Napoli, I had the opportunity to experience university life in a traditional way. I regularly attended lessons on campus, met with friends and colleagues, and collaborated in study groups and on various projects. My favorite courses were Operating Systems and Algorithms & Data Structures, both taught by outstanding professors."
+    }
+  ]
+}

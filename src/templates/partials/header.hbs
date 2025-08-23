@@ -1,0 +1,31 @@
+<header class="site-header">
+  <nav class="main-navigation">
+    <div class="nav-brand">
+      <a href="index.html">
+        <h1 class="logo">{{site.author}}</h1>
+      </a>
+    </div>
+
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link {{#if isHome}}active{{/if}}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="about.html" class="nav-link {{#if isAbout}}active{{/if}}">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="#projects" class="nav-link {{#if isProjects}}active{{/if}}">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a href="#contact" class="nav-link {{#if isContact}}active{{/if}}">Contact</a>
+      </li>
+    </ul>
+
+  <!-- Mobile menu button (burger) -->
+  <button class="mobile-menu-toggle" aria-label="Open navigation" aria-controls="nav-menu" aria-expanded="false">
+    <span class="burger-bar"></span>
+    <span class="burger-bar"></span>
+    <span class="burger-bar"></span>
+  </button>
+  </nav>
+</header>

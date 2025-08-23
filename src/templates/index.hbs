@@ -1,0 +1,23 @@
+<section class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">Hello, I'm
+      <span class="highlight">{{hero.name}}</span></h1>
+    <h2 class="hero-subtitle">{{hero.title}}</h2>
+    <p class="hero-description">
+      {{hero.bio}}
+    </p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <div class="vignette profile-vignette">This is the best photo of myself
+      available</div>
+    <img
+      src="{{hero.profileImage}}"
+      alt="{{hero.name}} - Profile Photo"
+      class="profile-photo zoom"
+    />
+  </div>
+</section>

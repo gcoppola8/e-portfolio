@@ -1,25 +1,104 @@
-### What is this?
-This `README.md` file is auto-created for all new projects.
+# E-Portfolio
 
-### Why am I here?
-This file opens automatically when you open a project. 
+This project is a personal portfolio website built with HTML, CSS, JavaScript, and Handlebars templates. It showcases professional experience, education, projects, and personal interests.
 
-If you do not create Guides, this `README.md` will be what automatically opens for students. You can edit this file by clicking on the pencil icon in the upper right corner.
+## Project Structure
 
-### How do I get started with Codio?
-Use this [Onboarding Guide](https://codio.com/home/starter-packs/2ae8501b-e5f7-4b07-8e9f-adb155fc6d10) for an interactive tutorial through the main features of Codio. Click on the link, click **Use Pack** and then click **Create** to add it to your projects.
+```
+404.html                # Custom 404 error page
+favicon.ico, icon.png   # Site icons
+index.html              # Main entry point
+LICENSE.txt             # License information
+package.json            # Project metadata and scripts
+robots.txt              # Search engine instructions
+site.webmanifest        # PWA manifest
+webpack.*.js            # Webpack configuration files
 
-### How do I close this file?
-At the top of your workspace you will see tabs for each open file. Click the x on the right hand side of the tab that says **README.md**.
-![readMeTab](https://global.codio.com/platform/readme.resources/readMeTab.png)
+css/
+  style.css             # Main stylesheet
+img/
+  *.jpg, *.png          # Images used throughout the site
+js/
+  app.js                # Main JavaScript file
+  vendor/               # Third-party JS libraries
+src/
+  data/
+    portfolio.json      # Data for portfolio content
+  templates/
+    about.hbs           # About page template
+    index.hbs           # Home page template
+    layout.hbs          # Main layout template
+    partials/
+      header.hbs        # Header partial
+      footer.hbs        # Footer partial
 
-### I expected to see or edit learning materials.
-Select **Tools->Guide->Play** to view the Guide for this project.
-![playGuide](https://global.codio.com/platform/readme.resources/playGuide.png)
+```
 
-Click on the **Open Guides Editor** icon to edit the Guide.
-![guideEdit](https://global.codio.com/platform/readme.resources/guideEdit.png)
+## Getting Started
 
-### How do I delete this file?
-To delete this `README.md` file, right-click (ctrl-click on a Mac) on the file name in the file list.
-![fileTree](https://global.codio.com/platform/readme.resources/fileTree.png)
+### Prerequisites
+
+- Node.js (v16 or higher recommended)
+- npm (comes with Node.js)
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/gcoppola8/e-portfolio.git
+   cd e-portfolio
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+### Development
+
+To start the development server with hot reload:
+
+```sh
+npm run start
+```
+
+This will use `webpack.config.dev.js` and serve the site locally.
+
+### Build for Production
+
+To build the site for production:
+
+```sh
+npm run build
+```
+
+This will use `webpack.config.prod.js` and output optimized files.
+
+### File Locations
+
+- **Templates**: All Handlebars templates are in `src/templates/`.
+- **Static Assets**: Images are in `img/`, styles in `css/`, scripts in `js/`.
+- **Data**: Portfolio content is in `src/data/portfolio.json`.
+
+### Customization
+
+- Update your personal info, experience, and projects in `src/data/portfolio.json`.
+- Edit templates in `src/templates/` for layout changes.
+- Add images to `img/` and reference them in your data/templates.
+
+### Useful Commands
+
+- `npm run start` — Start development server
+- `npm run build` — Build for production
+- `npm run lint` — Run linter (if configured)
+
+## Contributing
+
+Feel free to fork and submit pull requests. Please follow the code style and add comments where necessary.
+
+## License
+
+See `LICENSE.txt` for details.
+
+---
+
+For any questions, contact the repository owner.

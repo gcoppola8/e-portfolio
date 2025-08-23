@@ -1,0 +1,107 @@
+<section class="about-hero">
+  <div class="container">
+    <h1 class="section-title">About Me</h1>
+    <div class="about-content half-split">
+      <div></div>
+      <div class="about-text">
+        <p class="lead">
+          {{about.bio}}
+        </p>
+        {{!-- <p class="about-description">
+          {{about.longDescription}}
+        </p> --}}
+      </div>
+      <div class="about-image">
+        <img
+          src="img/trevi.jpg"
+          alt="About {{site.author}}"
+          class="about-photo zoom"
+        />
+        <div class="vignette about-vignette">A glimpse of timeless beauty:
+          Fontana di Trevi</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="personal">
+  <div class="container">
+    <h2 class="section-title">When I'm Not Coding</h2>
+    <div class="personal-content half-split">
+      <div class="personal-image">
+        <img
+          src="img/biketravel.jpg"
+          alt="Bike travel"
+          class="bike-photo zoom"
+        />
+      </div>
+      <div class="lead">
+        <p>
+          Beyond the world of code, I enjoy
+          {{about.hobbies}}. I believe that diverse experiences fuel creativity
+          and help me approach problems from different angles. My favorite way
+          to solve a problem is to ignore it for a while until the solution
+          comes to me. (<a
+            href="https://en.wikipedia.org/wiki/Incubation_(psychology)"
+          >Incubation</a>)
+        </p>
+        <p>
+          <strong>Languages I speak:</strong>
+          {{#each about.languages}}
+            <span class="language-item">
+              <span class="language-name">{{{language}}}</span>
+              <span class="language-level">{{level}}</span>
+            </span>{{#unless @last}}, {{/unless}}
+          {{/each}}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="education">
+  <div class="container">
+    <h2 class="section-title">Education & Certifications</h2>
+    <div class="half-split">
+      {{#each education}}
+        <div class="education-card">
+
+          <h3 class="degree">{{degree}}</h3>
+          <h4 class="institution">{{institution}}</h4>
+          <p class="graduation-year">{{year}}</p>
+          {{#if description}}
+            <p class="education-description">{{description}}</p>
+          {{/if}}
+
+          <img src="{{picture}}" alt="{{institution}} logo" class="zoom" />
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+<section class="experience">
+  <div class="container">
+    <h2 class="section-title">Professional Experience</h2>
+    <div class="timeline">
+      {{#each experiences}}
+        <div class="timeline-item">
+          <div class="timeline-date">{{dateRange}}</div>
+          <div class="timeline-content">
+            <h3 class="job-title">{{title}}</h3>
+            <h4 class="company"><img src="{{img}}" alt="{{company}} logo" />
+              {{company}}</h4>
+            <p class="job-description">{{description}}</p>
+            {{#if achievements}}
+              <ul class="achievements">
+                {{#each achievements}}
+                  <li>{{this}}</li>
+                {{/each}}
+              </ul>
+            {{/if}}
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
