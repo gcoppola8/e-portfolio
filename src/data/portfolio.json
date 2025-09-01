@@ -8,9 +8,18 @@
   },
   "navigation": {
     "links": [
-      { "name": "Home", "url": "#home" },
-      { "name": "About", "url": "#about" },
-      { "name": "Projects", "url": "#projects" }
+      {
+        "name": "Home",
+        "url": "#home"
+      },
+      {
+        "name": "About",
+        "url": "#about"
+      },
+      {
+        "name": "Projects",
+        "url": "#projects"
+      }
     ]
   },
   "hero": {
@@ -20,30 +29,47 @@
     "profileImage": "img/profile-photo.jpg"
   },
   "featuredProjects": [
-    {},
     {
-      "title": "E-Commerce Platform",
-      "description": "A full-stack e-commerce solution with React and Node.js",
-      "image": "img/project1.jpg",
-      "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
-      "liveUrl": "#",
-      "githubUrl": "#"
+      "title": "Personal Portfolio Website",
+      "description": "This is a responsive portfolio website built with HTML, CSS and JavaScript, and it is the one you are viewing right now. It uses standard web technologies together with a simple build process based on Webpack and Handlebars, which helps manage templates and avoid repeating code. A GitHub Action automatically builds and publishes the site to GitHub Pages every time I push changes to the main branch. The background is currently a pink canvas, but I plan to turn it into a 3D environment using Three.js in the future.",
+      "image": "img/portfolio.jpg",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Webpack",
+        "Handlebars",
+        "Github actions"
+      ],
+      "liveUrl": "https://gcoppola8.github.io/e-portfolio/index.html",
+      "githubUrl": "https://github.com/gcoppola8/e-portfolio"
     },
     {
-      "title": "Task Management App",
-      "description": "Collaborative project management tool with real-time updates",
-      "image": "img/project2.jpg",
-      "technologies": ["Vue.js", "Express", "Socket.io", "PostgreSQL"],
-      "liveUrl": "#",
-      "githubUrl": "#"
+      "title": "Vito Bot",
+      "description": "A Discord bot that allows users to manage a Minecraft server hosted in Azure. Mostly teens that don't need to deal with the Azure Portal, can talk to Vito Bot and get the server up and down using commands in the chat. The bot is hosted in Azure, it runs on a small container to contain costs, and use managed identities for authorization. A Github action updates the container automatically.",
+      "image": "img/discord.jpg",
+      "technologies": [
+        "Azure",
+        "Docker",
+        "Discord SDK",
+        "C#",
+        "GitHub Actions"
+      ],
+      "liveUrl": null,
+      "githubUrl": "https://github.com/gcoppola8/vito-bot"
     },
     {
-      "title": "Weather Dashboard",
-      "description": "Interactive weather application with location-based forecasts",
-      "image": "img/project3.jpg",
-      "technologies": ["JavaScript", "Weather API", "Chart.js", "CSS Grid"],
-      "liveUrl": "#",
-      "githubUrl": "#"
+      "title": "GForms",
+      "description": "A web application for building and managing forms, developed with Go, Angular, and PostgreSQL. It includes a full user management system with registration, email verification, and secure login functionality.",
+      "image": "img/gforms.jpg",
+      "technologies": [
+        "Go",
+        "Angular",
+        "Postgres",
+        "Docker"
+      ],
+      "liveUrl": null,
+      "githubUrl": "https://github.com/gcoppola8/gforms"
     }
   ],
   "skills": {
@@ -51,17 +77,25 @@
       "HTML5 & CSS3",
       "JavaScript (ES6+)",
       "React",
-      "Vue.js",
+      "Angular",
       "Responsive Design"
     ],
     "backend": [
-      "Java",
-      "C#",
+      "Java/Spring Framework",
+      "C#/.NET",
+      "Go",
       "Python",
       "Databases (SQL/NoSQL)",
       "RESTful APIs"
     ],
-    "tools": ["GitHub", "Azure DevOps", "Docker", "Agile Methodologies"]
+    "tools": [
+      "GitHub/Gitlab/AzureDevops",
+      "Docker",
+      "Agile Methodologies",
+      "AWS",
+      "Azure Cloud",
+      "Docker"
+    ]
   },
   "about": {
     "yearsOfExperience": 8,
@@ -71,10 +105,22 @@
     "email": "coppola612@gmail.com",
     "phone": "+359 895148268",
     "languages": [
-      { "language": "Italian &#x1F1EE;&#x1F1F9;", "level": "Mothertongue" },
-      { "language": "English &#x1F1EC;&#x1F1E7;", "level": "C1" },
-      { "language": "Bulgarian &#x1F1E7;&#x1F1EC;", "level": "B2" },
-      { "language": "Czech &#x1F1E8;&#x1F1E9;", "level": "B1" }
+      {
+        "language": "Italian &#x1F1EE;&#x1F1F9;",
+        "level": "Mothertongue"
+      },
+      {
+        "language": "English &#x1F1EC;&#x1F1E7;",
+        "level": "C1"
+      },
+      {
+        "language": "Bulgarian &#x1F1E7;&#x1F1EC;",
+        "level": "B2"
+      },
+      {
+        "language": "Czech &#x1F1E8;&#x1F1E9;",
+        "level": "B1"
+      }
     ]
   },
   "experiences": [
@@ -82,28 +128,28 @@
       "title": "Software Engineer",
       "company": "Microsoft",
       "img": "img/microsoft.jpg",
-      "dateRange": "06/2024 – Present",
+      "dateRange": "06/2024 - Present",
       "description": "Azure DevOps Platform, Enterprise authorization team."
     },
     {
       "title": "Senior Software Engineer",
       "company": "Nuvei",
       "img": "img/nuvei.jpg",
-      "dateRange": "07/2020 – 05/2024",
+      "dateRange": "07/2020 - 05/2024",
       "description": "Next-gen platform for online payments. Contributed to new payment flows, improved customer experience and system performance."
     },
     {
       "title": "Software Engineer II/III",
       "company": "Axway",
       "img": "img/axway.jpg",
-      "dateRange": "11/2018 – 06/2020",
-      "description": "Maintained and developed Axway MFT (Managed File Transfer). Integrated platform with FTP, AWS S3, AWS SQS, Azure Blob Storage, OAuth2 authentication."
+      "dateRange": "11/2018 - 06/2020",
+      "description": "Maintained and developed Axway MFT (Managed File Transfer). Integrated platform with FTP, AWS, Azure Blob Storage, OAuth2 authentication."
     },
     {
       "title": "Junior Web Developer",
       "company": "Innovaway",
       "img": "img/innovaway.jpg",
-      "dateRange": "10/2017 – 10/2018",
+      "dateRange": "10/2017 - 10/2018",
       "description": "Worked on www.contactsdirect.com (Luxottica). Implemented solutions to maximize e-commerce conversion, integrated insurances, shipping (shoprunner.com), authentication (id.me), and restyled UI."
     }
   ],
