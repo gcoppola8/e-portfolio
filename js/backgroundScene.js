@@ -1,5 +1,7 @@
 // Minimal Three.js setup
 import * as THREE from 'three';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 const scene = new THREE.Scene();
 scene.background = new THREE.Color('pink');
@@ -8,6 +10,7 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
+
 renderer.domElement.id = 'background-three-canvas';
 renderer.domElement.style.position = 'fixed';
 renderer.domElement.style.top = '0';
@@ -18,33 +21,48 @@ renderer.domElement.style.zIndex = '-1';
 renderer.domElement.style.pointerEvents = 'none';
 document.body.insertBefore(renderer.domElement, document.body.firstChild);
 
-// const geometry = new THREE.BoxGeometry(1, 1, 1);
-// const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-// const cube = new THREE.Mesh(geometry, material);
-// scene.add(cube);
+// Controls
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.autoRotate = true;
 
-//create a blue LineBasicMaterial
-const material = new THREE.LineBasicMaterial( { color: 0x0000ff } );
+// Lighting
+const light = new THREE.DirectionalLight(0xffffff, 1);
+light.position.set(2, 2, 5);
+scene.add(light);
+scene.add(new THREE.AmbientLight(0xffffff, 0.5));
 
-const points = [];
-points.push( new THREE.Vector3( - 10, 0, 0 ) );
-points.push( new THREE.Vector3( 0, 10, 0 ) );
-points.push( new THREE.Vector3( 10, 0, 0 ) );
-points.push( new THREE.Vector3( - 10, 0, 0 ) );
+// Load GLTF
+const loader = new GLTFLoader();
+let mixer, model;
 
+let shipStartY = 0;
+loader.load("./js/vendor/ship/scene.gltf", (gltf) => {
+    model = gltf.scene;
+    scene.add(model);
 
-const geometry = new THREE.BufferGeometry().setFromPoints( points );
+    // Set model to a random position off the left side of the screen
+    shipStartY = (Math.random() - 0.5) * 30; // Range [-15, 15]
+    model.position.set(-8, shipStartY, 0);
+    model.scale.set(1.5, 1.5, 1.5);
+});
 
-const line = new THREE.Line( geometry, material );
+camera.position.set(11, 15, 15);
+controls.update();
 
-scene.add( line );
-
-camera.position.set( 0, 0, 100 );
-camera.lookAt( 0, 0, 0 );
+const clock = new THREE.Clock();
 
 function animate() {
-
     requestAnimationFrame(animate);
+
+    const delta = clock.getDelta();
+    controls.update(delta);
     renderer.render(scene, camera);
 }
 animate();
+
+window.addEventListener("resize", () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+});
+

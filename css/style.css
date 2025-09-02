@@ -1,3 +1,12 @@
+/* Footer Bottom Transparent Background */
+.footer-bottom {
+  background: rgba(255, 255, 255, 0.6); /* semi-transparent white */
+  backdrop-filter: blur(6px);
+  color: var(--text-color);
+  padding: 1em 0;
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
 /*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -279,8 +288,14 @@ textarea {
   min-height: 70vh;
 }
 
-.hero-content {
+.hero-content, .lead {
   animation: fadeInLeft 1s ease-out;
+  background: rgba(255, 255, 255, 0.6); /* semi-transparent white */
+  backdrop-filter: blur(6px);
+  color: var(--text-color);
+  padding: 1em 1em;
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 .hero-title {
