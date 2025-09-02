@@ -49,11 +49,12 @@ function compileTemplate(templateName, pageData) {
 module.exports = {
   entry: {
     app: "./js/app.js",
+    backgroundScene: "./js/backgroundScene.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
     clean: true,
-    filename: "./js/app.js",
+    filename: "./js/[name].js",
   },
   module: {
     rules: [
