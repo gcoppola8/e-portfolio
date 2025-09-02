@@ -6,9 +6,6 @@ module.exports = merge(common, {
   mode: 'production',
   optimization: {
     minimize: true,
-    splitChunks: {
-      chunks: 'all',
-    },  
   },
   plugins: [
     new CopyPlugin({
