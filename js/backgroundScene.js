@@ -51,14 +51,12 @@ document.body.insertBefore(renderer.domElement, document.body.firstChild);
 
 // const clock = new THREE.Clock();
 
-// function animate() {
-//     requestAnimationFrame(animate);
+function animate() {
+    requestAnimationFrame(animate);
 
-//     const delta = clock.getDelta();
-//     controls.update(delta);
-//     renderer.render(scene, camera);
-// }
-// animate();
+    renderer.render(scene, camera);
+}
+animate();
 
 window.addEventListener("resize", () => {
     camera.aspect = window.innerWidth / window.innerHeight;
