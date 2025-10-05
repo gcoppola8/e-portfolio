@@ -70,6 +70,17 @@
       ],
       "liveUrl": null,
       "githubUrl": "https://github.com/gcoppola8/gforms"
+    },
+    {
+      "title": "Game of Life",
+      "description": "A real-time simulation of Conway's Game of Life, built with Go and Raylib(3D library). Users can create, modify, and observe the evolution of cellular automata in a grid-based environment.",
+      "image": "img/game-of-life.png",
+      "technologies": [
+        "Go",
+        "2D Graphics",
+        "Raylib"
+      ],
+      "githubUrl": "https://github.com/gcoppola8/game-of-life"
     }
   ],
   "skills": {
