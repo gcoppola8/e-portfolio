@@ -30,6 +30,19 @@
   },
   "featuredProjects": [
     {
+      "title": "Hosintra",
+      "description": "A platform for hotels to manage their processese, bookings, and customers. It includes a full user management system with tenants, roles, and permissions. It uses Docker, Nginx, PHP, MySQL, Phalcon framework, and Bootstrap.",
+      "image": "img/hosintra.jpg",
+      "technologies": [
+        "JavaScript",
+        "PHP",
+        "MySQL",
+        "Docker",
+        "Nginx"
+      ],
+      "liveUrl": "http://hosintra.com/"
+    },
+    {
       "title": "Personal Portfolio Website",
       "description": "This is a responsive portfolio website built with HTML, CSS and JavaScript, and it is the one you are viewing right now. It uses standard web technologies together with a simple build process based on Webpack and Handlebars, which helps manage templates and avoid repeating code. A GitHub Action automatically builds and publishes the site to GitHub Pages every time I push changes to the main branch. The background is currently a pink canvas, but I plan to turn it into a 3D environment using Three.js in the future.",
       "image": "img/portfolio.jpg",
@@ -141,6 +154,13 @@
       "img": "img/microsoft.jpg",
       "dateRange": "06/2024 - Present",
       "description": "Azure DevOps Platform, Enterprise authorization team."
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Freelance",
+      "img": "img/hosintra.jpg",
+      "dateRange": "07/2023 - Present",
+      "description": "Working as freelancer, mostly for Hosintra.com, a hotel management platform. I am responsible for maintaining and developing new features using PHP, MySQL, Docker, Nginx."
     },
     {
       "title": "Senior Software Engineer",
