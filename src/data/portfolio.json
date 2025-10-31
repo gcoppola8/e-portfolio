@@ -82,7 +82,7 @@
         "Docker"
       ],
       "liveUrl": null,
-      "githubUrl": "https://github.com/gcoppola8/gforms"
+      "githubUrl": "https://github.com/gcoppola8/go-playground"
     },
     {
       "title": "Game of Life",
@@ -93,7 +93,7 @@
         "2D Graphics",
         "Raylib"
       ],
-      "githubUrl": "https://github.com/gcoppola8/game-of-life"
+      "githubUrl": "https://github.com/gcoppola8/go-playground"
     }
   ],
   "skills": {
