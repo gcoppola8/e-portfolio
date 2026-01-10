@@ -30,6 +30,19 @@
   },
   "featuredProjects": [
     {
+      "title": "Cloud-native photo portfolio service",
+      "description": "Developed with Node.js, Terraform, Azure containers and Google drive api, photo portfolio is a project that allow the owner to receive emails from customers and manage the albums and photos from a selected folder in Google Drive. No need for manual uploads. The infrastructure is provisioned with Terraform and the application is deployed in Azure containers.",
+      "image": "img/katrin.png",
+      "technologies": [
+        "Node.js",
+        "Terraform",
+        "Azure",
+        "Google Drive API"
+      ],
+      "liveUrl": "https://katrin.coppalabs.com",
+      "githubUrl": "https://gitlab.com/jerry.coppola/photo-portfolio"
+    },
+    {
       "title": "Hosintra",
       "description": "A platform for hotels to manage their processese, bookings, and customers. It includes a full user management system with tenants, roles, and permissions. It uses Docker, Nginx, PHP, MySQL, Phalcon framework, and Bootstrap.",
       "image": "img/hosintra.jpg",
